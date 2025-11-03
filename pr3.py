@@ -2,6 +2,7 @@ text = (input("enter a word: ")).lower()
 print(f"Total characters (with spaces): {len(text)}")
 
 count = len([x for x in text if x !=" "])
+count_2 = text.replace(' ','')
 print(f"Total characters (without spaces): {count}")
 
 word = text.split()

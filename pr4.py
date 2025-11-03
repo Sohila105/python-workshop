@@ -6,9 +6,9 @@ print("You have 7 attempts.")
 
 while True:
     num = random.randint(1, 100)
-    attempts = 1
+    attempts = 0
 
-    while attempts <= 7:
+    while attempts < 7:
         guess = input("Enter your guess: ")
         if not guess.isdigit():
             print("enter a valid number between 1 and 100")
@@ -29,7 +29,7 @@ while True:
             print("Too high! Try again.")
 
         attempts += 1
-        print(f"Attempts left: {7 - attempts + 1}\n")
+        print(f"Attempts left: {7 - attempts}\n")
 
 
     if attempts > 7 and guess_i != num:
